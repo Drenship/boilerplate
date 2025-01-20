@@ -1,0 +1,203 @@
+{
+    "LocaleLayout": {
+        "title": "Adessya"
+    },
+    "LocaleSwitcher": {
+        "label": "Language",
+        "settingsTitle": "Settings",
+        "chooseLanguage": "Choose Language",
+        "locale": {
+            "fr": "French",
+            "de": "German",
+            "en": "English",
+            "es": "Spanish"
+        }
+    },
+    "Metadata": {
+        "home": "Home",
+        "productNotFoundTitle": "Product Not Found - Adessya",
+        "productNotFoundDescription": "The product you are looking for is not available.",
+        "defaultProductDescription": "Discover this amazing product on Adessya.",
+        "ArticleNotFoundTitle": "Article Not Found - Adessya",
+        "ArticleNotFoundDescription": "The article you are looking for is not available.",
+        "defaultArticleDescription": "Discover this amazing article on Adessya.",
+        "defaultKeywords": "products, ecommerce, adessya, blog, articles",
+        "explorerNotFoundDescription": "The search or category you requested could not be found.",
+        "staticNotFoundDescription": "The content you are looking for could not be found.",
+        "auth": {
+            "sign-up": "Sign up",
+            "sign-in": "Sign in",
+            "logout": "Logout",
+            "recovery": "Account recovery"
+        }
+    },
+    "Manifest": {
+        "name": "Adessya"
+    },
+    "cookie": {
+        "message": "We use cookies to improve your experience.",
+        "accept": "Accept"
+    },
+    "Auth": {
+        "noAccount": "No account?",
+        "createAccount": "Create an account",
+        "hasAccount": "Already have an account?",
+        "login": "Log in",
+        "passwordLost": "Forgot password ?",
+        "recoverPassword": "Recover password",
+        "verifyCode": "Verify code",
+        "updatePassword": "Update password",
+        "goBack": "Go back",
+        "inputs": {
+            "email": "Email address",
+            "name": "Name",
+            "password": "Password",
+            "code": "Verification code",
+            "newPassword": "New password",
+            "confirmPassword": "Confirm password"
+        },
+        "error": {
+            "name": {
+                "required": "Name is required."
+            },
+            "email": {
+                "required": "Email address is required.",
+                "invalid": "Please enter a valid email address."
+            },
+            "password": {
+                "required": "Password is required.",
+                "weak": "The password is too weak.",
+                "minLength": "The password must be at least 8 characters long.",
+                "upperCase": "The password must contain at least one uppercase letter.",
+                "lowerCase": "The password must contain at least one lowercase letter.",
+                "numbers": "The password must contain at least one number.",
+                "specialChars": "The password must contain at least one special character."
+            },
+            "newPassword": {
+                "required": "The new password is required.",
+                "minLength": "The new password must be at least 8 characters long."
+            },
+            "confirmPassword": {
+                "required": "Password confirmation is required.",
+                "match": "Passwords do not match."
+            },
+            "code": {
+                "required": "The code is required.",
+                "invalid": "The verification code is incorrect.",
+                "tooShort": "The code is too short."
+            },
+            "generic": {
+                "unexpected": "An unexpected error occurred, please try again.",
+                "signupFailed": "Signup failed. Please try again.",
+                "loginFailed": "Incorrect email or password."
+            }
+        },
+        "toaster": {
+            "loginSuccess": "Successfully logged in",
+            "loginError": "Login error",
+            "unexpectedError": "An unexpected error occurred, please try again.",
+            "registerSuccess": "Successfully registered",
+            "registerError": "An error occurred during registration",
+            "sendCodeSuccess": "Recovery code sent successfully",
+            "sendCodeError": "An error occurred while sending the code",
+            "verifyCodeSuccess": "Code verified successfully",
+            "verifyCodeError": "Verification code is incorrect",
+            "verifyCodeErrorFail": "An error occurred while verifying the code",
+            "updatePasswordSuccess": "Password updated successfully",
+            "updatePasswordError": "Error updating the password",
+            "newPasswordMismatch": "New passwords do not match",
+            "sameAsCurrentPassword": "The new password cannot be the same as the current password",
+            "allFieldsRequired": "All fields are required",
+            "passwordsDontMatch": "New passwords don't match",
+            "passwordDoesNotMeetRequirements": "Password doesn't meet all requirements"
+        },
+        "authenticationError": "Authentication Error",
+        "serverConfigurationIssue": "There is a problem with the server configuration.",
+        "accessDenied": "You do not have permission to sign in.",
+        "verificationIssue": "The verification link has expired or has already been used.",
+        "defaultError": "An unexpected authentication error occurred.",
+        "suggestionTitle": "Here are a few things you can try:",
+        "suggestions": {
+            "checkInternet": "Check your internet connection",
+            "clearCookies": "Clear your browser cookies",
+            "signInAgain": "Try signing in again",
+            "contactSupport": "Contact support if the problem persists"
+        },
+        "backToSignIn": "Back to Sign In",
+        "returnToHome": "Return to Home"
+    },
+    "Navigation": {
+        "auth": {
+            "sign-up": "Sign up",
+            "sign-in": "Sign in",
+            "logout": "Logout",
+            "recovery": "Account recovery"
+        }
+    },
+    "NotFoundPage": {
+        "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+        "title": "Page not found"
+    },
+    "PageLayout": {
+        "links": {
+            "docs": {
+                "description": "Learn more about next-intl in the official docs.",
+                "href": "https://next-intl-docs.vercel.app/",
+                "title": "Docs"
+            },
+            "source": {
+                "description": "Browse the source code of this example on GitHub.",
+                "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
+                "title": "Source code"
+            }
+        }
+    },
+    "Index": {
+        "title": "Hello world!!",
+        "subtitle": "How is it going?",
+        "alertMessage": "Something went wrong!"
+    },
+    "Input": {
+        "file": {
+            "dropText": "Drop files to Attach, or",
+            "browseText": "browse",
+            "dropHere": "Drop files here"
+        },
+        "customSelect": {
+            "placeholder": "Select an option",
+            "searchPlaceholder": "Search...",
+            "noOptions": "No options found",
+            "requiredMessage": "This field is required"
+        }
+    },
+    "Home": {
+        "title": "Home"
+    },
+    "SearchPage": {
+        "title": "Search",
+        "loadingMessage": "Loading search results...",
+        "errorMessage": "Error loading search results",
+        "noResultMessage": "No results found for",
+        "noProductMessage": "No products found",
+        "resultFor": "Search results for"
+    },
+    "Filters": {
+        "labels": {
+            "products": "Products",
+            "price": "Price",
+            "sortby": "Sort by",
+            "free": "Free",
+            "free-trial": "Free trial",
+            "under25": "Under €25",
+            "from25to50": "€25 to €50",
+            "from50to100": "€50 to €100",
+            "over100": "€100 and over",
+            "bestseller": "Best sellers",
+            "priceLtoH": "Price: Low to High",
+            "priceHtoL": "Price: High to Low",
+            "highest-rated": "Highest rated",
+            "newest-arrivals": "Newest arrivals",
+            "sort-filter": "Sort & Filter"
+        }
+    }
+}

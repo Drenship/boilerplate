@@ -1,0 +1,204 @@
+{
+    "LocaleLayout": {
+        "title": "Adessya"
+    },
+    "LocaleSwitcher": {
+        "label": "Langue",
+        "settingsTitle": "Paramètres",
+        "chooseLanguage": "Choisissez la langue",
+        "locale": {
+            "fr": "Français",
+            "de": "Allemand",
+            "en": "Anglais",
+            "es": "Espagnol"
+        }
+    },
+    "Metadata": {
+        "home": "Accueil",
+        "productNotFoundTitle": "Produit non trouvé - Adessya",
+        "productNotFoundDescription": "Le produit que vous recherchez n'est pas disponible.",
+        "defaultProductDescription": "Découvrez ce produit incroyable sur Adessya.",
+        "ArticleNotFoundTitle": "Article non trouvé - Adessya",
+        "ArticleNotFoundDescription": "L'article que vous recherchez n'est pas disponible.",
+        "defaultArticleDescription": "Découvrez cet article incroyable sur Adessya.",
+        "defaultKeywords": "produits, ecommerce, adessya, blog, articles",
+        "explorerNotFoundDescription": "La recherche ou la catégorie que vous avez demandée est introuvable.",
+        "staticNotFoundDescription": "Le contenu que vous recherchez est introuvable.",
+        "auth": {
+            "sign-up": "S'inscrire",
+            "sign-in": "Se connecter",
+            "logout": "Se déconnecter",
+            "recovery": "Récupération de compte"
+        },
+        "account": {}
+    },
+    "Manifest": {
+        "name": "Adessya"
+    },
+    "cookie": {
+        "message": "Nous utilisons des cookies pour améliorer votre expérience.",
+        "accept": "Accepter"
+    },
+    "Auth": {
+        "noAccount": "Pas de compte ?",
+        "createAccount": "Créer un compte",
+        "hasAccount": "Déjà un compte ?",
+        "login": "Connectez-vous",
+        "passwordLost": "Mot de passe oublié ?",
+        "recoverPassword": "Récupérer le mot de passe",
+        "verifyCode": "Vérifier le code",
+        "updatePassword": "Mettre à jour le mot de passe",
+        "goBack": "Retour",
+        "inputs": {
+            "email": "Adresse e-mail",
+            "name": "Nom",
+            "password": "Mot de passe",
+            "code": "Code de vérification",
+            "newPassword": "Nouveau mot de passe",
+            "confirmPassword": "Confirmer le mot de passe"
+        },
+        "error": {
+            "name": {
+                "required": "Le nom est requis."
+            },
+            "email": {
+                "required": "L'adresse e-mail est requise.",
+                "invalid": "Veuillez entrer une adresse e-mail valide."
+            },
+            "password": {
+                "required": "Le mot de passe est requis.",
+                "weak": "Le mot de passe est trop faible.",
+                "minLength": "Le mot de passe doit contenir au moins 8 caractères.",
+                "upperCase": "Le mot de passe doit contenir au moins une lettre majuscule.",
+                "lowerCase": "Le mot de passe doit contenir au moins une lettre minuscule.",
+                "numbers": "Le mot de passe doit contenir au moins un chiffre.",
+                "specialChars": "Le mot de passe doit contenir au moins un caractère spécial."
+            },
+            "newPassword": {
+                "required": "Le nouveau mot de passe est requis.",
+                "minLength": "Le nouveau mot de passe doit contenir au moins 8 caractères."
+            },
+            "confirmPassword": {
+                "required": "La confirmation du mot de passe est requise.",
+                "match": "Les mots de passe ne correspondent pas."
+            },
+            "code": {
+                "required": "Le code est requis.",
+                "invalid": "Le code de vérification est incorrect.",
+                "tooShort": "Le code est trop court."
+            },
+            "generic": {
+                "unexpected": "Une erreur inattendue est survenue, veuillez réessayer.",
+                "signupFailed": "Erreur lors de l'inscription. Veuillez réessayer.",
+                "loginFailed": "Email ou mot de passe incorrect."
+            }
+        },
+        "toaster": {
+            "loginSuccess": "Connecté avec succès",
+            "loginError": "Erreur lors de la connexion",
+            "unexpectedError": "Une erreur inattendue est survenue, veuillez réessayer.",
+            "registerSuccess": "Inscription réussie",
+            "registerError": "Une erreur est survenue lors de l'inscription",
+            "sendCodeSuccess": "Code de récupération envoyé avec succès",
+            "sendCodeError": "Une erreur est survenue lors de l'envoi du code",
+            "verifyCodeSuccess": "Code vérifié avec succès",
+            "verifyCodeError": "Code de vérification incorrect",
+            "verifyCodeErrorFail": "Une erreur est survenue lors de la vérification du code",
+            "updatePasswordSuccess": "Mot de passe mis à jour avec succès",
+            "updatePasswordError": "Erreur lors de la mise à jour du mot de passe",
+            "newPasswordMismatch": "Les nouveaux mots de passe ne sont pas identiques",
+            "sameAsCurrentPassword": "Le nouveau mot de passe ne peut pas être identique à l'ancien mot de passe",
+            "allFieldsRequired": "Tous les champs sont obligatoires",
+            "passwordsDontMatch": "Les nouveaux mots de passe ne correspondent pas",
+            "passwordDoesNotMeetRequirements": "Le mot de passe ne répond pas à toutes les exigences"
+        },
+        "authenticationError": "Erreur d'authentification",
+        "serverConfigurationIssue": "Il y a un problème avec la configuration du serveur.",
+        "accessDenied": "Vous n'avez pas la permission de vous connecter.",
+        "verificationIssue": "Le lien de vérification a expiré ou a déjà été utilisé.",
+        "defaultError": "Une erreur d'authentification inattendue s'est produite.",
+        "suggestionTitle": "Voici quelques solutions possibles :",
+        "suggestions": {
+            "checkInternet": "Vérifiez votre connexion Internet",
+            "clearCookies": "Effacez les cookies de votre navigateur",
+            "signInAgain": "Essayez de vous reconnecter",
+            "contactSupport": "Contactez le support si le problème persiste"
+        },
+        "backToSignIn": "Retour à la connexion",
+        "returnToHome": "Retour à l'accueil"
+    },
+    "Navigation": {
+        "auth": {
+            "sign-up": "S'inscrire",
+            "sign-in": "Se connecter",
+            "logout": "Se déconnecter",
+            "recovery": "Récupération de compte"
+        }
+    },
+    "NotFoundPage": {
+        "description": "Veuillez vérifier l'adresse dans la barre de navigation ou utiliser la navigation pour aller à une page connue.",
+        "title": "Page non trouvée"
+    },
+    "PageLayout": {
+        "links": {
+            "docs": {
+                "description": "En savoir plus sur next-intl dans la documentation officielle.",
+                "href": "https://next-intl-docs.vercel.app/",
+                "title": "Documentation"
+            },
+            "source": {
+                "description": "Parcourir le code source de cet exemple sur GitHub.",
+                "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
+                "title": "Code source"
+            }
+        }
+    },
+    "Index": {
+        "title": "Bonjour le monde !!",
+        "subtitle": "bla bla bla bla.",
+        "alertMessage": "Quelque chose a mal tourné !"
+    },
+    "Input": {
+        "file": {
+            "dropText": "Déposez les fichiers à attacher, ou",
+            "browseText": "parcourir",
+            "dropHere": "Déposez les fichiers ici"
+        },
+        "customSelect": {
+            "placeholder": "Sélectionnez une option",
+            "searchPlaceholder": "Rechercher...",
+            "noOptions": "Aucune option trouvée",
+            "requiredMessage": "Ce champ est requis"
+        }
+    },
+    "Home": {
+        "title": "Accueil"
+    },
+    "SearchPage": {
+        "title": "Recherche",
+        "loadingMessage": "Chargement des résultats de recherche...",
+        "errorMessage": "Erreur lors du chargement des résultats de recherche",
+        "noResultMessage": "Aucun résultat trouvé pour",
+        "noProductMessage": "Aucun produit trouvé",
+        "resultFor": "Résultats de la recherche pour"
+    },
+    "Filters": {
+        "labels": {
+            "products": "Produits",
+            "price": "Prix",
+            "sortby": "Trier par",
+            "free": "Gratuit",
+            "free-trial": "Essai gratuit",
+            "under25": "Moins de 25€",
+            "from25to50": "25€ à 50€",
+            "from50to100": "50€ à 100€",
+            "over100": "100€ et plus",
+            "bestseller": "Meilleures ventes",
+            "priceLtoH": "Prix croissant",
+            "priceHtoL": "Prix décroissant",
+            "highest-rated": "Les mieux notés",
+            "newest-arrivals": "Nouveautés",
+            "sort-filter": "Trier & filtrer"
+        }
+    }
+}
