@@ -5,10 +5,12 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import clsx from "clsx";
+import { ThemeToggle } from "../theme-switcher/theme-toggle";
+import useUser from "@/libs/hooks/datas/useUser";
 
 export function DashboardLayout({ links, children }: any) {
-
   const [open, setOpen] = useState(false);
+  const { user } = useUser();
   return (
     <div
       className={clsx(
@@ -26,14 +28,14 @@ export function DashboardLayout({ links, children }: any) {
               ))}
             </div>
           </div>
-          <div>
+          <div className="flex items-center justify-between">
             <SidebarLink
               link={{
-                label: "Manu Arora",
+                label: user?.name || "undefined",
                 href: "#",
                 icon: (
                   <Image
-                    src="https://assets.aceternity.com/manu.png"
+                    src={user?.image || "https://assets.aceternity.com/manu.png"}
                     className="h-7 w-7 flex-shrink-0 rounded-full"
                     width={50}
                     height={50}
@@ -42,6 +44,7 @@ export function DashboardLayout({ links, children }: any) {
                 ),
               }}
             />
+            {open && <ThemeToggle />}
           </div>
         </SidebarBody>
       </Sidebar>

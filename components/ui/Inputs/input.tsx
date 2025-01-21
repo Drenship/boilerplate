@@ -52,7 +52,7 @@ const Input: React.FC<InputProps> = ({
         placeholder=" "
         type={inputType}
         className={clsx(
-          "peer w-full p-4 pt-6 font-light bg-white border-2 rounded-md outline-none transition disabled:opacity-70 disabled:cursor-not-allowed text-black",
+          "peer w-full p-4 pt-6 font-light !bg-white border-2 rounded-md outline-none transition disabled:opacity-70 disabled:cursor-not-allowed text-black",
           {
             "pl-9": formatPrice,
             "pl-4": !formatPrice,
