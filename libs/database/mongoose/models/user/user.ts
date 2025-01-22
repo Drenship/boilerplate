@@ -13,7 +13,7 @@ const userSchema = new Schema(
       required: [true, "We need an email to create an account."],
       unique: true,
       trim: true,
-      maxLength: 150,
+      maxLength: [150, "Email cannot exceed 150 characters"],
       match: [
         /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
         "Please fill a valid email address",
@@ -42,18 +42,22 @@ const userSchema = new Schema(
       trim: true,
       require: false,
       maxLength: 128,
+      select: false,
     },
     passwordResetToken: {
       type: String,
       default: null,
+      select: false,
     },
     passwordResetExpires: {
       type: Date,
       default: null,
+      select: false,
     },
     passwordResetRequestTimestamp: {
       type: Number,
       default: null,
+      select: false,
     },
 
     picture: {
@@ -109,6 +113,7 @@ const userSchema = new Schema(
       type: Boolean,
       default: false,
     },
+
     integrations: {
       github: {
         accessToken: { type: String, trim: true },
@@ -125,6 +130,7 @@ const userSchema = new Schema(
         isAssociate: { type: Boolean },
       },
     },
+
     settings: {
       account: {
         emailFollowsMe: { type: Boolean, default: true },
@@ -140,47 +146,6 @@ const userSchema = new Schema(
         newLaunchesProjects: { type: Boolean, default: false },
         monthlyProdoctUpdate: { type: Boolean, default: true },
         subscribeNewslater: { type: Boolean, default: false },
-      },
-    },
-    favorites: [
-      { type: Schema.Types.ObjectId, ref: "Marketplace", default: null },
-    ],
-    sellerProfile: {
-      logo: {
-        type: String,
-        default: "", // Valeur par défaut pour le logo
-      },
-      marketplaceName: {
-        type: String,
-        default: "Default Marketplace", // Valeur par défaut pour le nom du marketplace
-      },
-      status: {
-        type: String,
-        default: "Active", // Valeur par défaut pour le statut
-      },
-      description: {
-        type: String,
-        maxlength: 300,
-        default: "Default description", // Valeur par défaut pour la description
-      },
-      tags: {
-        type: [String],
-        default: ["#default"], // Valeur par défaut pour les tags
-      },
-      socialLinks: {
-        type: [
-          {
-            platform: {
-              type: String,
-              default: "", // Valeur par défaut pour la plateforme
-            },
-            url: {
-              type: String,
-              default: "", // Valeur par défaut pour l'URL
-            },
-          },
-        ],
-        default: [], // Valeur par défaut pour les liens sociaux
       },
     },
 

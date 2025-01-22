@@ -23,6 +23,7 @@
   --input: 240 4.9% 83.9%;
   --ring: 240 5% 64.9%;
   --radius: 0.5rem;
+  --black: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -65,4 +66,38 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.header--main {
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: transparent;
+  background-image: radial-gradient(transparent 2px, var(--background) 2px);
+  background-size: 4px 4px;
+  backdrop-filter: blur(3px);
+  mask: linear-gradient(var(--background) 60%, transparent);
+  z-index: 10;
+}
+
+.header--mask {
+  flex: none;
+  inset: 0;
+  overflow: visible;
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  background-image: radial-gradient(
+    transparent 1px,
+    var(--background, #ffffff) 1px
+  );
+  background-size: 4px 4px;
+  backdrop-filter: blur(3px);
+  mask: linear-gradient(var(--background) 60%, var(--background) 100%);
+  opacity: 1;
 }

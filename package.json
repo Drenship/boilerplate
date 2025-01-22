@@ -17,6 +17,9 @@
     "@radix-ui/react-tooltip": "^1.1.6",
     "@react-email/components": "^0.0.32",
     "@react-pdf/renderer": "^4.1.6",
+    "@tanstack/query-sync-storage-persister": "^5.64.2",
+    "@tanstack/react-query": "^5.64.2",
+    "@tanstack/react-query-persist-client": "^5.64.2",
     "axios": "^1.7.9",
     "bcrypt": "^5.1.1",
     "class-variance-authority": "^0.7.1",
@@ -28,7 +31,10 @@
     "next": "15.1.5",
     "next-auth": "^5.0.0-beta.25",
     "next-intl": "^3.26.3",
+    "next-themes": "^0.4.4",
     "react": "^19.0.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
     "react-hot-toast": "^2.5.1",
@@ -39,6 +45,7 @@
     "stripe": "^17.5.0",
     "ua-parser-js": "^2.0.0",
     "uuid": "^11.0.5",
+    "zod": "^3.24.1",
     "zustand": "^5.0.3"
   },
   "devDependencies": {

@@ -42,9 +42,5 @@ export default function RootLayout({
     },
   ];
 
-  return (
-    <DashboardLayout links={links}>
-      {children}
-    </DashboardLayout>
-  );
+  return <DashboardLayout links={links}>{children}</DashboardLayout>;
 }

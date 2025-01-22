@@ -212,7 +212,7 @@ function PriceRange({ items = mock_items }: { items: DataRange[] }) {
 
   return (
     <div className="space-y-4">
-      <Label>Price slider</Label>
+      <Label className="text-black dark:text-white">Price slider</Label>
       <div>
         {/* Histogram bars */}
         <div className="flex h-12 w-full items-end px-3" aria-hidden="true">
@@ -231,8 +231,8 @@ function PriceRange({ items = mock_items }: { items: DataRange[] }) {
                   priceStep,
                   sliderValue
                 )}
-                className="h-full w-full bg-primary/20"
-              ></span>
+                className="h-full w-full bg-secondary dark:bg-primary/20"
+              />
             </div>
           ))}
         </div>
@@ -248,7 +248,7 @@ function PriceRange({ items = mock_items }: { items: DataRange[] }) {
       {/* Inputs */}
       <div className="flex items-center justify-between gap-4">
         <div className="space-y-1">
-          <Label htmlFor={`${id}-min`}>Min price</Label>
+          <Label htmlFor={`${id}-min`} className="text-black dark:text-white">Min price</Label>
           <div className="relative">
             <Input
               id={`${id}-min`}
@@ -271,7 +271,7 @@ function PriceRange({ items = mock_items }: { items: DataRange[] }) {
           </div>
         </div>
         <div className="space-y-1">
-          <Label htmlFor={`${id}-max`}>Max price</Label>
+          <Label htmlFor={`${id}-max`} className="text-black dark:text-white">Max price</Label>
           <div className="relative">
             <Input
               id={`${id}-max`}
