@@ -35,7 +35,7 @@ export function DashboardLayout({ links, children }: any) {
                 href: "#",
                 icon: (
                   <Image
-                    src={user?.image || "https://assets.aceternity.com/manu.png"}
+                    src={user?.image || "/default-panda-pp.png"}
                     className="h-7 w-7 flex-shrink-0 rounded-full"
                     width={50}
                     height={50}

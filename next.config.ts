@@ -24,14 +24,10 @@ const nextConfig: NextConfig = {
     ],
   },
   webpack: (config) => {
-    // Votre configuration webpack existante...
     return config;
   },
-  trailingSlash: false, // met un / a la fin de tout les url si true
-  //compiler: {
-  //  // Cela permet à Next.js de faire confiance aux en-têtes du proxy inverse
-  //  trustHostHeader: true,
-  //},
+  trailingSlash: false,
+
 };
 
 export default withNextIntl(nextConfig);
