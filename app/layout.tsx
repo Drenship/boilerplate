@@ -22,7 +22,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-black`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

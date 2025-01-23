@@ -52,7 +52,7 @@ const Input: React.FC<InputProps> = ({
         placeholder=" "
         type={inputType}
         className={clsx(
-          "peer w-full p-4 pt-6 font-light !bg-white border-2 rounded-md outline-none transition disabled:opacity-70 disabled:cursor-not-allowed text-black",
+          "peer w-full p-4 pt-6 font-light bg-white! border-2 rounded-md outline-hidden transition disabled:opacity-70 disabled:cursor-not-allowed text-black",
           {
             "pl-9": formatPrice,
             "pl-4": !formatPrice,
@@ -79,7 +79,7 @@ const Input: React.FC<InputProps> = ({
         <button
           type="button"
           onClick={togglePasswordVisibility}
-          className="absolute top-5 right-4 text-neutral-700 focus:outline-none"
+          className="absolute top-5 right-4 text-neutral-700 focus:outline-hidden"
         >
           {showPassword ? <BiHide size={24} /> : <BiShow size={24} />}
         </button>

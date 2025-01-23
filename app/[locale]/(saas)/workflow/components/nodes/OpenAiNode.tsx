@@ -5,7 +5,7 @@ import { Handle, Position } from "reactflow";
 
 export default function OpenAiNode({ data }: any) {
   return (
-    <div className="min-w-[150px] bg-white border border-gray-200 rounded-lg shadow p-3 relative">
+    <div className="min-w-[150px] bg-white border border-gray-200 rounded-lg shadow-sm p-3 relative">
       <div className="flex items-center mb-2">
         {/* Icône OpenAI (ex: “🤖” ou un logo custom) */}
         <span className="text-green-600 mr-2">🤖</span>
@@ -18,12 +18,12 @@ export default function OpenAiNode({ data }: any) {
       <Handle
         type="source"
         position={Position.Right}
-        className="bg-green-500 w-3 h-3 border-2 border-white"
+        className="bg-green-500 !w-3 !h-3 border-2 border-white"
       />
       <Handle
         type="target"
         position={Position.Left}
-        className="bg-green-500 w-3 h-3 border-2 border-white"
+        className="bg-green-500 !w-3 !h-3 border-2 border-white"
       />
     </div>
   );

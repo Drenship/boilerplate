@@ -40,50 +40,51 @@ export default function WorkflowPage() {
 
   return (
     <ReactFlowProvider>
-      <div className="w-full h-screen bg-gray-100 relative">
-        {/* Le composant React Flow */}
-        <ReactFlow
-          nodeTypes={nodeTypes}
-          nodes={nodes}
-          edges={edges}
-          onNodesChange={onNodesChange}
-          onEdgesChange={onEdgesChange}
-          onConnect={onConnect}
-          fitView
-          nodesDraggable
-          nodesConnectable
-          elementsSelectable
-        >
-          <Controls />
-          <Background gap={16} />
-        </ReactFlow>
-
-        {/* Boutons d'action */}
-        <div className="absolute top-4 right-4 flex space-x-4">
+      <div className="flex items-start gap-4 h-full">
+        <div className=" flex flex-col gap-2 h-full w-sm border rounded-xl p-4">
+          {/* Boutons d'action */}
           <button
             onClick={() => addNode("email")}
-            className="px-4 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700"
+            className="px-4 py-2 bg-blue-600 text-white rounded-sm shadow-sm hover:bg-blue-700"
           >
             Add Email Node
           </button>
 
           <button
             onClick={() => addNode("slack", "Slack Node")}
-            className="px-4 py-2 bg-pink-600 text-white rounded shadow hover:bg-pink-700"
+            className="px-4 py-2 bg-pink-600 text-white rounded-sm shadow-sm hover:bg-pink-700"
           >
             Add Slack Node
           </button>
 
           <button
             onClick={() =>
-                addNode("openai", "OpenAI Node", {
+              addNode("openai", "OpenAI Node", {
                 prompt: "Posez votre question...",
               })
             }
-            className="px-4 py-2 bg-green-600 text-white rounded shadow hover:bg-green-700"
+            className="px-4 py-2 bg-green-600 text-white rounded-sm shadow-sm hover:bg-green-700"
           >
             Add OpenAI Node
           </button>
+        </div>
+        <div className="w-full h-full max-h-screen relative rounded-xl overflow-hidden border">
+          {/* Le composant React Flow */}
+          <ReactFlow
+            nodeTypes={nodeTypes}
+            nodes={nodes}
+            edges={edges}
+            onNodesChange={onNodesChange}
+            onEdgesChange={onEdgesChange}
+            onConnect={onConnect}
+            fitView
+            nodesDraggable
+            nodesConnectable
+            elementsSelectable
+          >
+            <Controls />
+            <Background gap={16} className="bg-white dark:bg-neutral-800" />
+          </ReactFlow>
         </div>
       </div>
     </ReactFlowProvider>

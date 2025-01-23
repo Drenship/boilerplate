@@ -49,7 +49,7 @@ export default function EmailNode(props: any) {
 
   return (
     <div
-      className="min-w-[150px] bg-white border border-gray-200 rounded-lg shadow p-3 relative"
+      className="min-w-[150px] bg-white border border-gray-200 rounded-lg shadow-sm p-3 relative"
       onContextMenu={handleContextMenu}
     >
       <div className="flex items-center mb-2">
@@ -65,18 +65,18 @@ export default function EmailNode(props: any) {
       <Handle
         type="source"
         position={Position.Right}
-        className="bg-blue-500 w-3 h-3 border-2 border-white"
+        className="bg-blue-500 !w-3 !h-3 border-2 border-white"
       />
       <Handle
         type="target"
         position={Position.Left}
-        className="bg-blue-500 w-3 h-3 border-2 border-white"
+        className="bg-blue-500 !w-3 !h-3 border-2 border-white"
       />
 
       {/* Menu contextuel */}
       {showMenu && (
         <div
-          className="fixed z-50 bg-white border border-gray-300 rounded shadow"
+          className="fixed z-50 bg-white border border-gray-300 rounded-sm shadow-sm"
           style={{ bottom: "-50%", right: "-50%" }}
           // onMouseLeave={closeMenu} // Désactiver temporairement
         >

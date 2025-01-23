@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <div className="relative min-h-[200vh]">
       <header className="header--main">
-        <div className="header--mask !-z-10" data-framer-name="Mask Pattern" />
+        <div className="header--mask -z-10!" data-framer-name="Mask Pattern" />
         <nav className="flex items-center justify-between z-50">
           <h1 className="text-2xl font-black text-yellow-600">Hello</h1>
           {user ? (
@@ -20,13 +20,13 @@ export default function HomePage() {
               <ThemeToggle />
               <Link
                 href="/dashboard"
-                className="px-3 py-1.5 bg-slate-700 rounded-full border border-white active:scale-95 duration-200 transition-all text-sm uppercase tracking-widest shadow"
+                className="px-3 py-1.5 bg-slate-700 rounded-full border border-white active:scale-95 duration-200 transition-all text-sm uppercase tracking-widest shadow-sm"
               >
                 Dashboard
               </Link>
               <Image
                 src={user?.image || "/default-panda-pp.png"}
-                className="h-8 w-8 flex-shrink-0 rounded-full shadow"
+                className="h-8 w-8 shrink-0 rounded-full shadow-sm"
                 width={50}
                 height={50}
                 alt="Avatar"
@@ -37,7 +37,7 @@ export default function HomePage() {
               <ThemeToggle />
               <Link
                 href="/auth/sign-in"
-                className="px-3 py-1.5 bg-slate-700 rounded-full border border-white active:scale-95 duration-200 transition-all text-sm uppercase tracking-widest shadow"
+                className="px-3 py-1.5 bg-slate-700 rounded-full border border-white active:scale-95 duration-200 transition-all text-sm uppercase tracking-widest shadow-sm"
               >
                 Sign-in
               </Link>

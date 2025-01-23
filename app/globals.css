@@ -1,7 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@custom-variant dark (&:is([data-theme="dark"] *));
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 :root {
   --background: #ffffff;
@@ -79,10 +101,10 @@ body {
   right: 0;
   z-index: 1000;
   background-color: transparent;
-  background-image: radial-gradient(transparent 2px, var(--background) 2px);
+  background-image: radial-gradient(transparent 2px, var(--foreground) 2px);
   background-size: 4px 4px;
   backdrop-filter: blur(3px);
-  mask: linear-gradient(var(--background) 60%, transparent);
+  mask: linear-gradient(var(--foreground) 60%, transparent);
   z-index: 10;
 }
 
@@ -99,6 +121,10 @@ body {
   );
   background-size: 4px 4px;
   backdrop-filter: blur(3px);
-  mask: linear-gradient(var(--background) 60%, var(--background) 100%);
+  mask: linear-gradient(var(--foreground) 60%, var(--foreground) 100%);
   opacity: 1;
+}
+
+.react-flow__attribution {
+  display: none;
 }

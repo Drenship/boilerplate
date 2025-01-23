@@ -40,7 +40,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <>
       {/* Set the language attribute using a dynamic effect */}
       <ClientProviders locale={locale} messages={messages}>
-        {children}
+        <div className="bg-gray-100 text-black dark:bg-neutral-800 dark:text-white">{children}</div>
       </ClientProviders>
     </>
   );

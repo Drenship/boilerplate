@@ -9,7 +9,7 @@ interface ModalToggleAnimationProps {
 export function ModalToggleAnimation({ children }: ModalToggleAnimationProps) {
   return (
     <motion.div
-      className="fixed inset-0 z-[100] flex items-center justify-center"
+      className="fixed inset-0 z-100 flex items-center justify-center"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}

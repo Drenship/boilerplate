@@ -19,7 +19,7 @@ export function ModalScreenBackground({
       <Dialog.Portal>
         {/* Backdrop with animation */}
         <motion.div
-          className="fixed inset-0 z-[99] flex items-center justify-center bg-black/60"
+          className="fixed inset-0 z-99 flex items-center justify-center bg-black/60"
           initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
           animate={{ opacity: 1, backdropFilter: "blur(8px)" }}
           exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
